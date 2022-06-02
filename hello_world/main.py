@@ -1,0 +1,26 @@
+from datetime import datetime
+from datetime import date
+from time import strftime
+
+dt = datetime.now()
+today = date.today()
+print("Today's date:", today)
+print()
+# year=dt.strftime("%Y")
+# month=dt.strftime("%m")
+# day=dt.strftime("%d")
+# time =dt.strftime("%H:%M:%S")
+# print(time)
+# print(year)
+# print(month)
+# print(day)
+format1 = strftime("%d %B, %Y")
+print(format1)
+print()
+format2 = strftime("%d-%m-%Y")
+print(format2)
+print()
+format3 = strftime("%H:%M %d-%m-%Y")
+print(format3)
+print()
+print("ISO format:", dt.isoformat())
